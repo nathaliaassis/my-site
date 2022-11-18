@@ -11,6 +11,14 @@ export const Container = styled('div', {
     display: 'flex',
     flexDirection: 'column',
     flex: 1,
+  },
+
+  svg: {
+    position: 'absolute',
+    left: '50%',
+    bottom: '$space2',
+    transform: 'translateX(-50%)',
+    color: '$lightBlue',
   }
 });
 
@@ -24,4 +32,13 @@ export const Name = styled('h1', {
   fontSize: '4rem',
   fontWeight: '500',
   lineHeight: '1.6',
+});
+
+export const ArrowImage = styled('img', {
+  position: 'absolute',
+  left: '50%',
+  bottom: '$space2',
+  transform: 'translateX(-50%)',
+  color: 'red',
+  fill: 'red'
 });
