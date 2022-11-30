@@ -72,7 +72,7 @@ export const Sphere = styled('img', {
   margin: '0 auto',
   height: '480px',
   width: '505px',
-  opacity: '.5',
+  opacity: '.8',
 
   animation: `${rotateSphere} 100s linear infinite`,
   transition: '.5s',

@@ -1,5 +1,7 @@
 import Section from "../../section/section.component";
 import { Container, Name, Text } from "./main.styled";
+import ArrowDown from "./arrow_down";
+import { HashLink } from "react-router-hash-link";
 
 function Main() {
   return (
@@ -14,6 +16,9 @@ function Main() {
           </Text>
         </div>
         <div></div>
+        <HashLink to="#about" smooth>
+          <ArrowDown />
+        </HashLink>
       </Container>
     </Section>
   );

@@ -16,13 +16,13 @@ function Header() {
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="#experiences">
-            Experiência
+          <HashLink smooth to="#technologies">
+            Tecnologias
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="#technologies">
-            Tecnologias
+          <HashLink smooth to="#experiences">
+            Experiência
           </HashLink>
         </li>
         <li>

@@ -7,9 +7,6 @@ const ArrowDown = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
       className="ai ai-ArrowDown"
     >
       <path d="M12 20V4" />

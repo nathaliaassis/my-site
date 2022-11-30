@@ -8,7 +8,7 @@ export const HeaderContainer = styled('header', {
   background: `linear-gradient(to right, ${theme.colors.darkblue1}, ${theme.colors.darkBlue2})`,
   height: '100px',
   padding: '2rem 12rem',
-  zIndex: 1,
+  zIndex: 5,
 
   position: 'fixed',
   width: '100%',
