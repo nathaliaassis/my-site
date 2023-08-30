@@ -37,26 +37,18 @@ function Header() {
           <CloseButton type="button" onClick={() => setMenuIsOpened(false)}>
             X
           </CloseButton>
-          <li>
-            <HashLink smooth to="#about">
-              Sobre
-            </HashLink>
-          </li>
-          <li>
-            <HashLink smooth to="#technologies">
-              Tecnologias
-            </HashLink>
-          </li>
-          <li>
-            <HashLink smooth to="#experiences">
-              Experiência
-            </HashLink>
-          </li>
-          <li>
-            <HashLink smooth to="#contact">
-              Contato
-            </HashLink>
-          </li>
+
+          {menuItems.map((menuItem) => (
+            <li key={menuItem.path}>
+              <HashLink
+                smooth
+                to={`#${menuItem.path}`}
+                onClick={() => setMenuIsOpened(false)}
+              >
+                {menuItem.name}
+              </HashLink>
+            </li>
+          ))}
         </MenuList>
       </Navbar>
     </HeaderContainer>
@@ -64,3 +56,22 @@ function Header() {
 }
 
 export default Header;
+
+const menuItems = [
+  {
+    path: "about",
+    name: "Sobre",
+  },
+  {
+    path: "technologies",
+    name: "Tecnologias",
+  },
+  {
+    path: "experiences",
+    name: "Experiências",
+  },
+  {
+    path: "contact",
+    name: "Contato",
+  },
+];
