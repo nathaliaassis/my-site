@@ -9,9 +9,9 @@ function HomePage() {
     <>
       <Header />
       <Main />
-      <About />
+      {/* <About />
       <Technologies />
-      <Experiences />
+      <Experiences /> */}
     </>
   );
 }

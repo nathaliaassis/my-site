@@ -4,11 +4,14 @@ function About() {
   return (
     <Section id="about" title="Sobre mim" themeColor="dark">
       <p>
-        Meu nome é Nathália, mas pode me chamar de Nath. Tenho 24 anos e
-        atualmente estou fazendo pós-graduação em Engenharia de Software na PUC
-        Minas. Trabalho com desenvolvimento front-end desde 2017. Possuo
-        experiência com desenvolvimento de interfaces web responsivas e
-        cross-browsers de alta qualidade.
+        Pós graduada em Engenharia de Software pela PUC Minas, possuo mais de 5
+        anos de experiência na área de técnologia, nos quais pude atuar em
+        diversos projetos desenvolvendo, corrigindo e aprimorando o front-end de
+        sistemas, sempre desenvolvendo códigos limpos, escaláveis e seguindo as
+        melhores práticas de codificação. Tenho experiência com testes
+        unitários, testes end-to-end, pair programming, ótima comunicação com os
+        times de design, testes, back-end e participação ativa em cerimônias de
+        times ágeis, bucando sempre contribuir com novas soluções e ideias.
       </p>
     </Section>
   );
