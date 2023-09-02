@@ -10,8 +10,8 @@ import {
 } from "./techs.styled";
 import { TECHNOLOGIES } from "./techs.mock";
 
-import GlobeImage from "../../assets/green_globe.png";
-import MouseImage from "../../assets/mouse.svg";
+import GlobeImage from "../../../../../assets/green_globe.png";
+import MouseImage from "../../../../../assets/mouse.svg";
 
 interface GlobalItemProps {
   title: string;

@@ -10,7 +10,7 @@ function HomePage() {
       <Header />
       <Main />
       <About />
-      {/*  <Technologies /> */}
+      <Technologies />
       {/* <Experiences />  */}
     </>
   );

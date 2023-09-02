@@ -1,5 +1,5 @@
-import Section from "../../section/section.component";
-import Techs from "../../techs/techs.component";
+import Section from "@/components/section/section.component";
+import Techs from "./techs/techs.component";
 
 function Technologies() {
   return (
