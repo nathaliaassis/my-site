@@ -3,7 +3,7 @@ import { Container, Title } from "./section.styled";
 
 interface SectionProps {
   themeColor?: "light" | "dark";
-  children: React.ReactElement;
+  children: React.ReactElement | React.ReactElement[];
   id: string;
   title?: string;
 }

@@ -1,7 +1,6 @@
-import Section from "../../section/section.component";
-import { Container, Name, Text } from "./main.styled";
+import { ArrowLink, Container, Name, Text } from "./main.styled";
 import ArrowDown from "./arrow_down";
-import { HashLink } from "react-router-hash-link";
+import Section from "@/components/section/section.component";
 
 function Main() {
   return (
@@ -15,11 +14,11 @@ function Main() {
             experiência com desenvolvimento front-end
           </Text>
         </div>
-        <div></div>
-        <HashLink to="#about" smooth>
-          <ArrowDown />
-        </HashLink>
+        {/* <div></div> */}
       </Container>
+      <ArrowLink to="#about" smooth>
+        <ArrowDown />
+      </ArrowLink>
     </Section>
   );
 }

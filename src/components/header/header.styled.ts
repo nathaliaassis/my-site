@@ -9,11 +9,16 @@ export const HeaderContainer = styled("header", {
   justifyContent: "space-between",
   width: "100%",
   background: `linear-gradient(to right, ${theme.colors.darkblue1}, ${theme.colors.darkBlue2})`,
-  padding: " 0 $space1",
+  padding: "$space1 $space2",
+  zIndex: 5,
+
+  "@tablet": {
+    padding: "$space1 $space2",
+  },
 
   "@laptop": {
     height: "100px",
-    padding: "0 12rem",
+    padding: "0 10rem",
   },
 });
 export const HomeLink = styled(HashLink, {
@@ -29,24 +34,17 @@ export const Navbar = styled("nav", {
   justifyContent: "space-between",
   alignItems: "center",
   width: "100%",
-  padding: "$space1",
-
-  "@laptop": {
-    alignItems: "center",
-    justifyContent: "space-between",
-
-    padding: "2rem 12rem",
-    zIndex: 5,
-  },
 });
+
+const siderBarWidth = "225px";
 
 const showUp = keyframes({
   "0%": { width: 0 },
-  "100%": { width: "220px" },
+  "100%": { width: siderBarWidth },
 });
 
 const hideUp = keyframes({
-  "0%": { width: "220px" },
+  "0%": { width: siderBarWidth },
   "100%": {
     width: 0,
   },
@@ -62,8 +60,6 @@ export const MenuList = styled("ul", {
 
   right: "-32px",
   height: "100vh",
-
-  listStyle: "none",
 
   li: {
     height: "2rem",
@@ -97,13 +93,20 @@ export const MenuList = styled("ul", {
     },
   },
 
-  "@laptop": {
-    display: "flex",
+  "@desktop": {
+    position: "relative",
+    background: "transparent",
+    padding: 0,
+    animation: "none !important",
+    height: "initial",
+
+    display: "flex !important",
     flexDirection: "row",
     alignItems: "center",
     gap: "$space1",
 
     a: {
+      fontSize: "$md",
       color: "$fontLight",
     },
   },
@@ -126,9 +129,14 @@ export const ResponsiveMenuButton = styled("button", {
   color: "$fontLight",
 
   "&:hover": {
+    transition: ".5s ease-in-out",
     filter: "brightness(0.8)",
     backgroundColor: "$fontLight",
     color: "$darkBlue2",
+  },
+
+  "@desktop": {
+    display: "none",
   },
 });
 
@@ -142,9 +150,20 @@ export const CloseButton = styled("button", {
   height: "2rem",
   width: "2rem",
   borderRadius: ".5rem",
+  cursor: "pointer",
 
   color: "$darkBlue2",
   fontWeight: "bolder",
   letterSpacing: 0,
   marginBottom: "1rem",
+
+  "&:hover": {
+    backgroundColor: "$darkBlue2",
+    transition: "all .2s ease-in-out",
+    color: "$white",
+  },
+
+  "@desktop": {
+    display: "none",
+  },
 });

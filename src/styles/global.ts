@@ -1,24 +1,37 @@
 import { globalCss } from ".";
 
 export const globalStyles = globalCss({
-  '*': {
+  "*": {
     margin: 0,
     padding: 0,
-    boxSizing: 'border-box',
+    boxSizing: "border-box",
+    border: 0,
+    fontSize: "100%",
+    font: "inherit",
+    verticalAlign: "baseline",
   },
 
-  body: {
-    margin: 0,
-    padding: 0,
-    '-webkit-font-smoothing': 'antialised',
-    backgroundColor: '$gray900',
-    color: '$gray100'
+  " ol, ul": {
+    listStyle: "none",
   },
 
-  'body, input, textarea, button, span, h1, h2, p': {
-    fontFamily: 'Montserrat',
+  "html, body": {
+    "-webkit-font-smoothing": "antialised",
+    backgroundColor: "$gray900",
+    color: "$gray100",
+    height: "100%",
+
+    "#root": {
+      display: "flex",
+      flexDirection: "column",
+      height: "100%",
+      width: "100%",
+    },
+  },
+
+  "body, input, textarea, button, span, h1, h2, p": {
+    fontFamily: "Montserrat",
     fontWeight: 400,
-    letterSpacing: '0.2rem',
-  }
+    letterSpacing: "0.2rem",
+  },
 });
-
