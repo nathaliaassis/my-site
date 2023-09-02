@@ -29,11 +29,11 @@ export const Text = styled("span", {
   fontSize: "$sm",
   lineHeight: "1.5",
   color: "$fontLight",
-  maxWidth: "50%",
 
   "@laptop": {
     fontSize: "$lg",
     lineHeight: "1.8",
+    maxWidth: "50%",
   },
 });
 
