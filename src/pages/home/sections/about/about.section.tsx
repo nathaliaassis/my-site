@@ -1,4 +1,4 @@
-import Section from "../../section/section.component";
+import Section from "@/components/section/section.component";
 
 function About() {
   return (
@@ -8,10 +8,13 @@ function About() {
         anos de experiência na área de técnologia, nos quais pude atuar em
         diversos projetos desenvolvendo, corrigindo e aprimorando o front-end de
         sistemas, sempre desenvolvendo códigos limpos, escaláveis e seguindo as
-        melhores práticas de codificação. Tenho experiência com testes
-        unitários, testes end-to-end, pair programming, ótima comunicação com os
-        times de design, testes, back-end e participação ativa em cerimônias de
-        times ágeis, bucando sempre contribuir com novas soluções e ideias.
+        melhores práticas de codificação.
+      </p>
+      <p>
+        Tenho experiência com testes unitários e end-to-end, pair programming,
+        ótima comunicação com os times de design, testes, back-end e
+        participação ativa em cerimônias de times ágeis, bucando sempre
+        contribuir com novas soluções e ideias.
       </p>
     </Section>
   );

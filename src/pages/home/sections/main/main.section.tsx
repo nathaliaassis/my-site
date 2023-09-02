@@ -14,7 +14,7 @@ function Main() {
             experiência com desenvolvimento front-end
           </Text>
         </div>
-        {/* <div></div> */}
+        {/*TODO: photo here? <div></div> */}
       </Container>
       <ArrowLink to="#about" smooth>
         <ArrowDown />

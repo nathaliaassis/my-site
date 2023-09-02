@@ -7,6 +7,7 @@ export const Container = styled("section", {
   justifyContent: "center",
   flex: 1,
   width: "100%",
+  minHeight: "100vh",
   height: "100vh",
   padding: "8rem 2rem",
 
